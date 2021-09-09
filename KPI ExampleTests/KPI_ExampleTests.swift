@@ -1,9 +1,14 @@
-//___FILEHEADER___
+//
+//  KPI_ExampleTests.swift
+//  KPI ExampleTests
+//
+//  Created by Andrew Skrypnik on 09.09.2021.
+//
 
 import XCTest
-@testable import ___VARIABLE_productName:identifier___
+@testable import KPI_Example
 
-class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
+class KPI_ExampleTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

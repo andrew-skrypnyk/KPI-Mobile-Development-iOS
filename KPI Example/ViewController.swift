@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  KPI Mobile Development iOS - Lec 2
+//  KPI Example
 //
 //  Created by Andrew Skrypnik on 09.09.2021.
 //

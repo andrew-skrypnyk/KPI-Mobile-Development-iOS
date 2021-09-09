@@ -1,8 +1,13 @@
-//___FILEHEADER___
+//
+//  KPI_ExampleUITests.swift
+//  KPI ExampleUITests
+//
+//  Created by Andrew Skrypnik on 09.09.2021.
+//
 
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
+class KPI_ExampleUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
