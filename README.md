@@ -17,4 +17,6 @@ Install CocoaPods
 bundle exec pod init
 bundle exec pod install
 bundle exec pod install --repo-update
+bundle exec pod update
+bundle exec pod update XXX
 ```

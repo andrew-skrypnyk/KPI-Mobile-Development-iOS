@@ -38,6 +38,7 @@ target 'KPI Example' do
 
   # Tools
   pod 'Alamofire'
+  pod 'DBDebugToolkit', :configurations => ['Debug']
 
   #google_utilites
   pod 'Firebase/Auth', '7.3.0'
@@ -49,7 +50,7 @@ target 'KPI Example' do
   pod 'GoogleSignIn'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Email'
-
+  
   target 'KPI ExampleTests' do
     inherit! :search_paths
     # Pods for testing
