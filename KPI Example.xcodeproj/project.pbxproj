@@ -3,17 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3640ED6E654CDC8A4349C6B9 /* Pods_KPI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82D103883994CF7A7EF61BA /* Pods_KPI_Example.framework */; };
 		3AB11A35E9C7D858B1EE3303 /* Pods_KPI_Example_KPI_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4A5EB2E99199498012186E /* Pods_KPI_Example_KPI_ExampleUITests.framework */; };
+		44041F67270655AC00BFCDD6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F66270655AC00BFCDD6 /* Coordinator.swift */; };
+		44041F69270657A000BFCDD6 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F68270657A000BFCDD6 /* App.swift */; };
+		44041F6B270657EC00BFCDD6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F6A270657EC00BFCDD6 /* AppCoordinator.swift */; };
+		44041F6D2706596700BFCDD6 /* ABTestsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F6C2706596700BFCDD6 /* ABTestsServiceProtocol.swift */; };
+		44041F6F2706598E00BFCDD6 /* AnalyticsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F6E2706598E00BFCDD6 /* AnalyticsServiceProtocol.swift */; };
+		44041F712706599B00BFCDD6 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F702706599B00BFCDD6 /* AnalyticsService.swift */; };
+		44041F73270659C500BFCDD6 /* ABTestsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F72270659C500BFCDD6 /* ABTestsService.swift */; };
+		44041F7627065D8C00BFCDD6 /* InitialViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F7527065D8C00BFCDD6 /* InitialViewControllerA.swift */; };
+		44041F7827065D9E00BFCDD6 /* InitialViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F7727065D9E00BFCDD6 /* InitialViewControllerB.swift */; };
+		44041F7A27065E7900BFCDD6 /* ABTestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F7927065E7900BFCDD6 /* ABTestProtocol.swift */; };
+		44041F7D27065F2C00BFCDD6 /* AnalyticEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44041F7C27065F2C00BFCDD6 /* AnalyticEvent.swift */; };
+		4439B7C2270CF5F100B0A927 /* ABTestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4439B7C1270CF5F100B0A927 /* ABTestWrapper.swift */; };
+		4439B7C5270CFB1B00B0A927 /* InitialScreenABTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4439B7C4270CFB1B00B0A927 /* InitialScreenABTest.swift */; };
 		4D0FDA9367D8C9A176F1845B /* Pods_KPI_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785FD7599484C73F115FB53E /* Pods_KPI_ExampleTests.framework */; };
 		A1FC25F526EA816F006EC4C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC25F426EA816F006EC4C2 /* AppDelegate.swift */; };
 		A1FC25F726EA816F006EC4C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC25F626EA816F006EC4C2 /* SceneDelegate.swift */; };
-		A1FC25F926EA816F006EC4C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC25F826EA816F006EC4C2 /* ViewController.swift */; };
-		A1FC25FC26EA816F006EC4C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FC25FA26EA816F006EC4C2 /* Main.storyboard */; };
 		A1FC25FE26EA8171006EC4C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FC25FD26EA8171006EC4C2 /* Assets.xcassets */; };
 		A1FC260126EA8171006EC4C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FC25FF26EA8171006EC4C2 /* LaunchScreen.storyboard */; };
 		A1FC260C26EA8172006EC4C2 /* KPI_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC260B26EA8172006EC4C2 /* KPI_ExampleTests.swift */; };
@@ -39,6 +50,19 @@
 
 /* Begin PBXFileReference section */
 		2BB65265D6DC88AD1B0793ED /* Pods-KPI ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-KPI ExampleTests/Pods-KPI ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		44041F66270655AC00BFCDD6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		44041F68270657A000BFCDD6 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		44041F6A270657EC00BFCDD6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		44041F6C2706596700BFCDD6 /* ABTestsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABTestsServiceProtocol.swift; sourceTree = "<group>"; };
+		44041F6E2706598E00BFCDD6 /* AnalyticsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsServiceProtocol.swift; sourceTree = "<group>"; };
+		44041F702706599B00BFCDD6 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		44041F72270659C500BFCDD6 /* ABTestsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABTestsService.swift; sourceTree = "<group>"; };
+		44041F7527065D8C00BFCDD6 /* InitialViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewControllerA.swift; sourceTree = "<group>"; };
+		44041F7727065D9E00BFCDD6 /* InitialViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewControllerB.swift; sourceTree = "<group>"; };
+		44041F7927065E7900BFCDD6 /* ABTestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABTestProtocol.swift; sourceTree = "<group>"; };
+		44041F7C27065F2C00BFCDD6 /* AnalyticEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticEvent.swift; sourceTree = "<group>"; };
+		4439B7C1270CF5F100B0A927 /* ABTestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABTestWrapper.swift; sourceTree = "<group>"; };
+		4439B7C4270CFB1B00B0A927 /* InitialScreenABTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenABTest.swift; sourceTree = "<group>"; };
 		4C4DFD2C814A99E4641A2B72 /* Pods-KPI Example-KPI ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Example-KPI ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-KPI Example-KPI ExampleUITests/Pods-KPI Example-KPI ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6B4A5EB2E99199498012186E /* Pods_KPI_Example_KPI_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KPI_Example_KPI_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741B31173298DC8CB760D947 /* Pods-KPI Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Example.debug.xcconfig"; path = "Target Support Files/Pods-KPI Example/Pods-KPI Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,8 +71,6 @@
 		A1FC25F126EA816F006EC4C2 /* KPI Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KPI Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FC25F426EA816F006EC4C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1FC25F626EA816F006EC4C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1FC25F826EA816F006EC4C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1FC25FB26EA816F006EC4C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1FC25FD26EA8171006EC4C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1FC260026EA8171006EC4C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1FC260226EA8171006EC4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +113,133 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44041F5B2706543C00BFCDD6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44041F632706550E00BFCDD6 /* Core */,
+				44041F61270654B900BFCDD6 /* Presentation */,
+				44041F60270654A700BFCDD6 /* App */,
+				44041F5C2706544900BFCDD6 /* BusinessLogic */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		44041F5C2706544900BFCDD6 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				44041F5D2706545900BFCDD6 /* Services */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		44041F5D2706545900BFCDD6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44041F5F2706549200BFCDD6 /* ABTestsService */,
+				44041F5E2706548300BFCDD6 /* AnalyticsService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		44041F5E2706548300BFCDD6 /* AnalyticsService */ = {
+			isa = PBXGroup;
+			children = (
+				44041F6E2706598E00BFCDD6 /* AnalyticsServiceProtocol.swift */,
+				44041F702706599B00BFCDD6 /* AnalyticsService.swift */,
+			);
+			path = AnalyticsService;
+			sourceTree = "<group>";
+		};
+		44041F5F2706549200BFCDD6 /* ABTestsService */ = {
+			isa = PBXGroup;
+			children = (
+				44041F6C2706596700BFCDD6 /* ABTestsServiceProtocol.swift */,
+				44041F72270659C500BFCDD6 /* ABTestsService.swift */,
+				44041F7927065E7900BFCDD6 /* ABTestProtocol.swift */,
+				4439B7C1270CF5F100B0A927 /* ABTestWrapper.swift */,
+			);
+			path = ABTestsService;
+			sourceTree = "<group>";
+		};
+		44041F60270654A700BFCDD6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1FC25F626EA816F006EC4C2 /* SceneDelegate.swift */,
+				A1FC25F426EA816F006EC4C2 /* AppDelegate.swift */,
+				44041F68270657A000BFCDD6 /* App.swift */,
+				44041F6A270657EC00BFCDD6 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		44041F61270654B900BFCDD6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				44041F7427065D5E00BFCDD6 /* InitialScreen */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		44041F62270654E000BFCDD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1FC25FF26EA8171006EC4C2 /* LaunchScreen.storyboard */,
+				A1FC25FD26EA8171006EC4C2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44041F632706550E00BFCDD6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				44041F7B27065F1700BFCDD6 /* Models */,
+				44041F652706559400BFCDD6 /* Coordinator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		44041F642706551D00BFCDD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1FC260226EA8171006EC4C2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44041F652706559400BFCDD6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				44041F66270655AC00BFCDD6 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		44041F7427065D5E00BFCDD6 /* InitialScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4439B7C3270CFB0A00B0A927 /* ABTest */,
+				44041F7527065D8C00BFCDD6 /* InitialViewControllerA.swift */,
+				44041F7727065D9E00BFCDD6 /* InitialViewControllerB.swift */,
+			);
+			path = InitialScreen;
+			sourceTree = "<group>";
+		};
+		44041F7B27065F1700BFCDD6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44041F7C27065F2C00BFCDD6 /* AnalyticEvent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4439B7C3270CFB0A00B0A927 /* ABTest */ = {
+			isa = PBXGroup;
+			children = (
+				4439B7C4270CFB1B00B0A927 /* InitialScreenABTest.swift */,
+			);
+			path = ABTest;
+			sourceTree = "<group>";
+		};
 		6A7701467158E15ECA679647 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +250,6 @@
 				77D46DA646FA53FF38E6D9F5 /* Pods-KPI ExampleTests.debug.xcconfig */,
 				2BB65265D6DC88AD1B0793ED /* Pods-KPI ExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,13 +278,9 @@
 		A1FC25F326EA816F006EC4C2 /* KPI Example */ = {
 			isa = PBXGroup;
 			children = (
-				A1FC25F426EA816F006EC4C2 /* AppDelegate.swift */,
-				A1FC25F626EA816F006EC4C2 /* SceneDelegate.swift */,
-				A1FC25F826EA816F006EC4C2 /* ViewController.swift */,
-				A1FC25FA26EA816F006EC4C2 /* Main.storyboard */,
-				A1FC25FD26EA8171006EC4C2 /* Assets.xcassets */,
-				A1FC25FF26EA8171006EC4C2 /* LaunchScreen.storyboard */,
-				A1FC260226EA8171006EC4C2 /* Info.plist */,
+				44041F5B2706543C00BFCDD6 /* Classes */,
+				44041F62270654E000BFCDD6 /* Resources */,
+				44041F642706551D00BFCDD6 /* Supporting Files */,
 			);
 			path = "KPI Example";
 			sourceTree = "<group>";
@@ -281,7 +425,6 @@
 			files = (
 				A1FC260126EA8171006EC4C2 /* LaunchScreen.storyboard in Resources */,
 				A1FC25FE26EA8171006EC4C2 /* Assets.xcassets in Resources */,
-				A1FC25FC26EA816F006EC4C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +586,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1FC25F926EA816F006EC4C2 /* ViewController.swift in Sources */,
+				44041F6B270657EC00BFCDD6 /* AppCoordinator.swift in Sources */,
+				44041F67270655AC00BFCDD6 /* Coordinator.swift in Sources */,
+				44041F712706599B00BFCDD6 /* AnalyticsService.swift in Sources */,
+				44041F7827065D9E00BFCDD6 /* InitialViewControllerB.swift in Sources */,
+				4439B7C5270CFB1B00B0A927 /* InitialScreenABTest.swift in Sources */,
+				44041F7627065D8C00BFCDD6 /* InitialViewControllerA.swift in Sources */,
+				44041F6D2706596700BFCDD6 /* ABTestsServiceProtocol.swift in Sources */,
+				4439B7C2270CF5F100B0A927 /* ABTestWrapper.swift in Sources */,
+				44041F6F2706598E00BFCDD6 /* AnalyticsServiceProtocol.swift in Sources */,
+				44041F7D27065F2C00BFCDD6 /* AnalyticEvent.swift in Sources */,
 				A1FC25F526EA816F006EC4C2 /* AppDelegate.swift in Sources */,
+				44041F7A27065E7900BFCDD6 /* ABTestProtocol.swift in Sources */,
+				44041F69270657A000BFCDD6 /* App.swift in Sources */,
+				44041F73270659C500BFCDD6 /* ABTestsService.swift in Sources */,
 				A1FC25F726EA816F006EC4C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,14 +636,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A1FC25FA26EA816F006EC4C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1FC25FB26EA816F006EC4C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A1FC25FF26EA8171006EC4C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -623,7 +770,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "KPI Example/Info.plist";
+				INFOPLIST_FILE = "KPI Example/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,7 +789,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "KPI Example/Info.plist";
+				INFOPLIST_FILE = "KPI Example/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
