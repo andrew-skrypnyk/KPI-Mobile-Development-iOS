@@ -39,7 +39,6 @@ extension AppCoordinator {
         case .variantB:
             vc = InitialViewControllerB()
         }
-        _ = vc.view
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
