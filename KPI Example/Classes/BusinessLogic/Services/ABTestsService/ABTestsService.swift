@@ -32,7 +32,9 @@ final class ABTestsService: ABTestsServiceProtocol {
         self.localStorage = localStorage
     }
     
-    
+    /**
+        Функция, которая отправляет значение ABTest-а во все аналитические тулзы и устанавливает User Property
+     */
     func hitSplitTest<T: ABTestProtocol>(abTest: ABTestWrapper<T>) where T.RawValue == String {
         let event = AnalyticEvent(identifier: T.analyticsIdentifier,
                                   parameters: ["param": abTest.abTestValue.rawValue])
@@ -40,6 +42,9 @@ final class ABTestsService: ABTestsServiceProtocol {
         analytics.setUserProperties(name: Constants.userPropertiesIdentifier + T.analyticsIdentifier, value: abTest.abTestValue.rawValue)
     }
   
+    /**
+     Функция для получения значения АБ теста с указанной пробабилити в ABTestProtocol
+     */
     func fetchABTest<T: ABTestProtocol>(type: T.Type) -> ABTestWrapper<T>? where T.RawValue == String {
         /// If exist we fetch ab test from local storage
         if let abTest = fetchTestFromLocalStorage(type: type) {

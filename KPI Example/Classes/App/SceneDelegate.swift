@@ -10,16 +10,28 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    /**
+    Создаем наш стартовый координатор и инжектим в него все необходимые зависимости.
+     Так же создаем instancee App класс, который в дальнейшем будет хендлить ивенты + будет бизнесс логика связанная с лайфсайклом приложения: например то что апка уходит в background
+      или то, что апка загрузилась и нам нужно высчитать начальный стейт для нее
+      Можно спросить на +1 балл что такое lazy init?
+     */
     private lazy var coordinator: AppCoordinator = .init(window: window,
                                                          app: App(application: .shared,
                                                                   abTestsService: ABTestsService(analytics: AnalyticsService(),
-                                                                                                 localStorage: .init())))
+                                                                                                 localStorage: .init()),
+                                                                  analytics: AnalyticsService()))
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        /**
+         Собственно точка входа для нашего приложения
+         */
+        let window = UIWindow(windowScene: windowScene)
+        self.window = window
         coordinator.start()
     }
 

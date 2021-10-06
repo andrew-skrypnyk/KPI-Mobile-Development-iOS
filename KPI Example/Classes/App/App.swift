@@ -12,16 +12,24 @@ final class App {
     // MARK: - Properties
     private let application: UIApplication
     private let abTestsService: ABTestsServiceProtocol
+    private let analytics: AnalyticsServiceProtocol
     
     var initialScreenABTestValue: ABTestWrapper<InitialScreenABTest>?
     
     init(
         application: UIApplication,
-        abTestsService: ABTestsServiceProtocol
+        abTestsService: ABTestsServiceProtocol,
+        analytics: AnalyticsServiceProtocol
     ) {
         self.application = application
         self.abTestsService = abTestsService
-        
+        self.analytics = analytics
+        #if !DEBUG
+        analytics.enable()
+        #endif
+        /**
+        Фетчим значение АБ Теста InitialScreenABTest, чтобы определить какой экран показываем на старте апки
+         */
         self.initialScreenABTestValue = abTestsService.fetchABTest(type: InitialScreenABTest.self)
     }
 }

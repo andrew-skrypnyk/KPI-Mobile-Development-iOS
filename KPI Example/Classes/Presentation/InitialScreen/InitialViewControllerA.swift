@@ -19,6 +19,6 @@ class InitialViewControllerA: UIViewController {
         label.textColor = .black
         label.text = "Variant A"
         view.addSubview(label)
-        view.backgroundColor = .white
+        view.backgroundColor = .green
     }
 }

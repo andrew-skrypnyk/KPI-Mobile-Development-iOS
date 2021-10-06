@@ -12,7 +12,7 @@ class InitialViewControllerB: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let button = UIButton(type: .custom)
+        let button = UIButton(type: .system)
         button.setTitle("Variant B", for: .normal)
         button.frame = .init(x: 20.0,
                              y: 20.0,

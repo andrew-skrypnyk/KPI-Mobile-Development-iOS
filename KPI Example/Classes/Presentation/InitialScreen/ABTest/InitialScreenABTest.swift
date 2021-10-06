@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+///Пример того, как создавать новый ABTest
 enum InitialScreenABTest: String, ABTestProtocol {
     static var analyticsIdentifier: String = "ios_initial_screen_abTest"
     var probability: Double { 0.5 }
