@@ -27,9 +27,7 @@ final class App {
         #if !DEBUG
         analytics.enable()
         #endif
-        /**
-        Фетчим значение АБ Теста InitialScreenABTest, чтобы определить какой экран показываем на старте апки
-         */
+        
         self.initialScreenABTestValue = abTestsService.fetchABTest(type: InitialScreenABTest.self)
     }
 }

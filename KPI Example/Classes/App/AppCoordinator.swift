@@ -28,18 +28,8 @@ final class AppCoordinator: Coordinator {
 // MARK: - Public
 extension AppCoordinator {
     func start() {
-        /**
-         Достаем значение ABTest-а из инстанса App и в зависимости от значения показиваем нужный нам View Controller
-         */
-        let safeABTestValue = app.initialScreenABTestValue?.abTestValue ?? .variantA
-        let vc: UIViewController
-        switch safeABTestValue {
-        case .variantA:
-            vc = InitialViewControllerA()
-        case .variantB:
-            vc = InitialViewControllerB()
-        }
-        window?.rootViewController = vc
+        let navigationViewController = UINavigationController(rootViewController: GithubReposListViewController())
+        window?.rootViewController = navigationViewController
         window?.makeKeyAndVisible()
     }
 }

@@ -29,27 +29,27 @@ target 'KPI Example' do
   use_frameworks!
 
   # Pods for KPI Example
-  common_settings
-  analytics_pods
-  storage
+  #common_settings
+  #analytics_pods
+  #storage
 
   # Views
-  pod 'lottie-ios'
+  #pod 'lottie-ios'
 
   # Tools
-  pod 'Alamofire'
+  #pod 'Alamofire'
   pod 'DBDebugToolkit', :configurations => ['Debug']
 
   #google_utilites
-  pod 'Firebase/Auth', '7.3.0'
-  pod 'Firebase/Core', '7.3.0'
-  pod 'Firebase/Firestore', '7.3.0'
-  pod 'Firebase/Messaging', '7.3.0'
-  pod 'Firebase/Performance', '7.3.0'
-  pod 'Firebase/RemoteConfig', '7.3.0'
-  pod 'GoogleSignIn'
-  pod 'FirebaseUI/Auth'
-  pod 'FirebaseUI/Email'
+  #pod 'Firebase/Auth', '7.3.0'
+  #pod 'Firebase/Core', '7.3.0'
+  #pod 'Firebase/Firestore', '7.3.0'
+  #pod 'Firebase/Messaging', '7.3.0'
+  #pod 'Firebase/Performance', '7.3.0'
+  #pod 'Firebase/RemoteConfig', '7.3.0'
+  #pod 'GoogleSignIn'
+  #pod 'FirebaseUI/Auth'
+  #pod 'FirebaseUI/Email'
   
   target 'KPI ExampleTests' do
     inherit! :search_paths
