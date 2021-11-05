@@ -35,7 +35,7 @@ extension AppCoordinator {
 // MARK: - Private
 extension AppCoordinator {
     private func showReposList() {
-        let reposListCoordinator = GithubReposListViewCoordinator(window: self.window)
+        let reposListCoordinator = MVVMReposListViewCoordinator(window: self.window)//GithubReposListViewCoordinator(window: self.window)
         addChild(reposListCoordinator)
         reposListCoordinator.start()
     }
