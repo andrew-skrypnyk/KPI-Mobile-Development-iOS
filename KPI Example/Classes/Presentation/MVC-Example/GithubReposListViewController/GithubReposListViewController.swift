@@ -8,14 +8,14 @@
 import UIKit
 
 final class GithubReposListViewController: ViewLoadableController<GithubReposListView> {
+    var onSelectRepoCellItem: ((RepoCellItem) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Repos"
 
         self.mainView.onSelectRepoCellItem = { [unowned self] cellItem in
-            let detailRepoViewController = GithubRepoDetailViewController(repoItem: cellItem)
-            self.navigationController?.pushViewController(detailRepoViewController,
-                                                          animated: UIView.areAnimationsEnabled)
+            self.onSelectRepoCellItem?(cellItem)
         }
         
         fetchRepositories()

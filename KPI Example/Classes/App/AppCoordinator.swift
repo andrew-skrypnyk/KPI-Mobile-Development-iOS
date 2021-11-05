@@ -28,8 +28,15 @@ final class AppCoordinator: Coordinator {
 // MARK: - Public
 extension AppCoordinator {
     func start() {
-        let navigationViewController = UINavigationController(rootViewController: GithubReposListViewController())
-        window?.rootViewController = navigationViewController
-        window?.makeKeyAndVisible()
+        showReposList()
+    }
+}
+
+// MARK: - Private
+extension AppCoordinator {
+    private func showReposList() {
+        let reposListCoordinator = GithubReposListViewCoordinator(window: self.window)
+        addChild(reposListCoordinator)
+        reposListCoordinator.start()
     }
 }
