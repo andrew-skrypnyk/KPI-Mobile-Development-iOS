@@ -36,6 +36,18 @@
 		5618487927351CBD00D3AC82 /* MVVMReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618487827351CBD00D3AC82 /* MVVMReposListViewController.swift */; };
 		5618487C27351D2000D3AC82 /* MVVMReposListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618487B27351D2000D3AC82 /* MVVMReposListViewModel.swift */; };
 		5618487E273525D700D3AC82 /* MVVMReposListViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618487D273525D700D3AC82 /* MVVMReposListViewCoordinator.swift */; };
+		567ABA3D2750F3A30083532F /* XibFirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567ABA3C2750F3A20083532F /* XibFirstViewModel.swift */; };
+		56BC90A5274D207700DD5A44 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BC90A4274D207700DD5A44 /* Storyboard.storyboard */; };
+		56BC90A7274D20C100DD5A44 /* SBFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BC90A6274D20C100DD5A44 /* SBFirstViewController.swift */; };
+		56BC90A9274D20CD00DD5A44 /* SBSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BC90A8274D20CD00DD5A44 /* SBSecondViewController.swift */; };
+		56BC90AC274D212800DD5A44 /* XibFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BC90AA274D212800DD5A44 /* XibFirstViewController.swift */; };
+		56BC90AD274D212800DD5A44 /* XibFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56BC90AB274D212800DD5A44 /* XibFirstViewController.xib */; };
+		56BC90B0274D213700DD5A44 /* XibSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BC90AE274D213700DD5A44 /* XibSecondViewController.swift */; };
+		56BC90B1274D213700DD5A44 /* XibSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56BC90AF274D213700DD5A44 /* XibSecondViewController.xib */; };
+		56BC90B3274D216700DD5A44 /* CodeFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BC90B2274D216700DD5A44 /* CodeFirstViewController.swift */; };
+		56BC90B5274D217100DD5A44 /* CodeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BC90B4274D217100DD5A44 /* CodeSecondViewController.swift */; };
+		56BC90B7274D218A00DD5A44 /* SwiftUIFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BC90B6274D218A00DD5A44 /* SwiftUIFirstView.swift */; };
+		56BC90B9274D219500DD5A44 /* SwiftUISecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BC90B8274D219500DD5A44 /* SwiftUISecondView.swift */; };
 		A1FC25F526EA816F006EC4C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC25F426EA816F006EC4C2 /* AppDelegate.swift */; };
 		A1FC25F726EA816F006EC4C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC25F626EA816F006EC4C2 /* SceneDelegate.swift */; };
 		A1FC25FE26EA8171006EC4C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FC25FD26EA8171006EC4C2 /* Assets.xcassets */; };
@@ -90,6 +102,18 @@
 		5618487827351CBD00D3AC82 /* MVVMReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMReposListViewController.swift; sourceTree = "<group>"; };
 		5618487B27351D2000D3AC82 /* MVVMReposListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMReposListViewModel.swift; sourceTree = "<group>"; };
 		5618487D273525D700D3AC82 /* MVVMReposListViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMReposListViewCoordinator.swift; sourceTree = "<group>"; };
+		567ABA3C2750F3A20083532F /* XibFirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibFirstViewModel.swift; sourceTree = "<group>"; };
+		56BC90A4274D207700DD5A44 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		56BC90A6274D20C100DD5A44 /* SBFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBFirstViewController.swift; sourceTree = "<group>"; };
+		56BC90A8274D20CD00DD5A44 /* SBSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSecondViewController.swift; sourceTree = "<group>"; };
+		56BC90AA274D212800DD5A44 /* XibFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibFirstViewController.swift; sourceTree = "<group>"; };
+		56BC90AB274D212800DD5A44 /* XibFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibFirstViewController.xib; sourceTree = "<group>"; };
+		56BC90AE274D213700DD5A44 /* XibSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibSecondViewController.swift; sourceTree = "<group>"; };
+		56BC90AF274D213700DD5A44 /* XibSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibSecondViewController.xib; sourceTree = "<group>"; };
+		56BC90B2274D216700DD5A44 /* CodeFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeFirstViewController.swift; sourceTree = "<group>"; };
+		56BC90B4274D217100DD5A44 /* CodeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSecondViewController.swift; sourceTree = "<group>"; };
+		56BC90B6274D218A00DD5A44 /* SwiftUIFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirstView.swift; sourceTree = "<group>"; };
+		56BC90B8274D219500DD5A44 /* SwiftUISecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISecondView.swift; sourceTree = "<group>"; };
 		6B4A5EB2E99199498012186E /* Pods_KPI_Example_KPI_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KPI_Example_KPI_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741B31173298DC8CB760D947 /* Pods-KPI Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Example.debug.xcconfig"; path = "Target Support Files/Pods-KPI Example/Pods-KPI Example.debug.xcconfig"; sourceTree = "<group>"; };
 		77D46DA646FA53FF38E6D9F5 /* Pods-KPI ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-KPI ExampleTests/Pods-KPI ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -367,6 +391,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		56BC90A0274D1FDC00DD5A44 /* UI_Live_Coding_Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				56BC90A4274D207700DD5A44 /* Storyboard.storyboard */,
+				56BC90A6274D20C100DD5A44 /* SBFirstViewController.swift */,
+				56BC90A8274D20CD00DD5A44 /* SBSecondViewController.swift */,
+			);
+			path = UI_Live_Coding_Storyboards;
+			sourceTree = "<group>";
+		};
+		56BC90A1274D200E00DD5A44 /* UI_Live_Coding_XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				56BC90AA274D212800DD5A44 /* XibFirstViewController.swift */,
+				56BC90AB274D212800DD5A44 /* XibFirstViewController.xib */,
+				56BC90AE274D213700DD5A44 /* XibSecondViewController.swift */,
+				56BC90AF274D213700DD5A44 /* XibSecondViewController.xib */,
+				567ABA3C2750F3A20083532F /* XibFirstViewModel.swift */,
+			);
+			path = UI_Live_Coding_XIBs;
+			sourceTree = "<group>";
+		};
+		56BC90A2274D202700DD5A44 /* UI_Live_Coding_Code */ = {
+			isa = PBXGroup;
+			children = (
+				56BC90B2274D216700DD5A44 /* CodeFirstViewController.swift */,
+				56BC90B4274D217100DD5A44 /* CodeSecondViewController.swift */,
+			);
+			path = UI_Live_Coding_Code;
+			sourceTree = "<group>";
+		};
+		56BC90A3274D203300DD5A44 /* UI_Live_Coding_SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				56BC90B6274D218A00DD5A44 /* SwiftUIFirstView.swift */,
+				56BC90B8274D219500DD5A44 /* SwiftUISecondView.swift */,
+			);
+			path = UI_Live_Coding_SwiftUI;
+			sourceTree = "<group>";
+		};
 		6A7701467158E15ECA679647 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +447,10 @@
 		A1FC25E826EA816F006EC4C2 = {
 			isa = PBXGroup;
 			children = (
+				56BC90A3274D203300DD5A44 /* UI_Live_Coding_SwiftUI */,
+				56BC90A2274D202700DD5A44 /* UI_Live_Coding_Code */,
+				56BC90A1274D200E00DD5A44 /* UI_Live_Coding_XIBs */,
+				56BC90A0274D1FDC00DD5A44 /* UI_Live_Coding_Storyboards */,
 				A1FC25F326EA816F006EC4C2 /* KPI Example */,
 				A1FC260A26EA8172006EC4C2 /* KPI ExampleTests */,
 				A1FC261526EA8172006EC4C2 /* KPI ExampleUITests */,
@@ -549,7 +617,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FC260126EA8171006EC4C2 /* LaunchScreen.storyboard in Resources */,
+				56BC90B1274D213700DD5A44 /* XibSecondViewController.xib in Resources */,
+				56BC90AD274D212800DD5A44 /* XibFirstViewController.xib in Resources */,
 				A1FC25FE26EA8171006EC4C2 /* Assets.xcassets in Resources */,
+				56BC90A5274D207700DD5A44 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				561848662734E68B00D3AC82 /* GithubRepoDetailViewController.swift in Sources */,
+				56BC90B5274D217100DD5A44 /* CodeSecondViewController.swift in Sources */,
 				44041F6B270657EC00BFCDD6 /* AppCoordinator.swift in Sources */,
 				44041F67270655AC00BFCDD6 /* Coordinator.swift in Sources */,
 				44041F712706599B00BFCDD6 /* AnalyticsService.swift in Sources */,
@@ -690,13 +762,18 @@
 				5618487927351CBD00D3AC82 /* MVVMReposListViewController.swift in Sources */,
 				561848632734DC9B00D3AC82 /* GithubAPI.swift in Sources */,
 				44041F6D2706596700BFCDD6 /* ABTestsServiceProtocol.swift in Sources */,
+				56BC90A7274D20C100DD5A44 /* SBFirstViewController.swift in Sources */,
 				4439B7C2270CF5F100B0A927 /* ABTestWrapper.swift in Sources */,
 				44041F6F2706598E00BFCDD6 /* AnalyticsServiceProtocol.swift in Sources */,
 				561848722734F73E00D3AC82 /* ViewLoadableController.swift in Sources */,
+				56BC90A9274D20CD00DD5A44 /* SBSecondViewController.swift in Sources */,
 				44041F7D27065F2C00BFCDD6 /* AnalyticEvent.swift in Sources */,
 				561848742735152600D3AC82 /* GithubReposListViewCoordinator.swift in Sources */,
 				A1FC25F526EA816F006EC4C2 /* AppDelegate.swift in Sources */,
+				56BC90B7274D218A00DD5A44 /* SwiftUIFirstView.swift in Sources */,
 				44041F7A27065E7900BFCDD6 /* ABTestProtocol.swift in Sources */,
+				56BC90B0274D213700DD5A44 /* XibSecondViewController.swift in Sources */,
+				567ABA3D2750F3A30083532F /* XibFirstViewModel.swift in Sources */,
 				44041F69270657A000BFCDD6 /* App.swift in Sources */,
 				561848702734F6B400D3AC82 /* ViewLoadableProtocol.swift in Sources */,
 				44041F73270659C500BFCDD6 /* ABTestsService.swift in Sources */,
@@ -704,7 +781,10 @@
 				561848762735153C00D3AC82 /* GithubRepoDetailViewCoordinator.swift in Sources */,
 				A1FC25F726EA816F006EC4C2 /* SceneDelegate.swift in Sources */,
 				5618486D2734F35300D3AC82 /* GithubRepoDetailView.swift in Sources */,
+				56BC90B9274D219500DD5A44 /* SwiftUISecondView.swift in Sources */,
+				56BC90B3274D216700DD5A44 /* CodeFirstViewController.swift in Sources */,
 				5618486A2734EBF300D3AC82 /* GithubReposListView.swift in Sources */,
+				56BC90AC274D212800DD5A44 /* XibFirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -27,13 +28,42 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        /**
-         Собственно точка входа для нашего приложения
-         */
+
         let window = UIWindow(windowScene: windowScene)
         self.window = window
-        coordinator.start()
+//        startWithStoryboard(in: window)
+        startWithXib(in: window)
+//        startWithCode(in: window)
+//        startWithSwiftUI(in: window)
+//        coordinator.start()
     }
+    
+    private func startWithStoryboard(in window: UIWindow) {
+        let storyboard = UIStoryboard(name: "Storyboard", bundle: .main)
+        let initialVC = storyboard.instantiateViewController(withIdentifier: "second")
+//        let initialVC = storyboard.instantiateInitialViewController()
+        window.rootViewController = initialVC
+        window.makeKeyAndVisible()
+    }
+    
+    private func startWithXib(in window: UIWindow) {
+        let initialVC = XibFirstViewController(viewModel: FirstViewModel(shazamService: ShazamService()))//XibFirstViewController(nibName: nil, bundle: nil)
+        window.rootViewController = initialVC
+        window.makeKeyAndVisible()
+    }
+    
+    private func startWithCode(in window: UIWindow) {
+        let initialVC = CodeFirstViewController(nibName: nil, bundle: nil)
+        window.rootViewController = initialVC
+        window.makeKeyAndVisible()
+    }
+    
+    private func startWithSwiftUI(in window: UIWindow) {
+        let initialVC = UIHostingController(rootView:  SwiftUIFirstView())
+        window.rootViewController = initialVC
+        window.makeKeyAndVisible()
+    }
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
